@@ -166,7 +166,7 @@ color: #d3dbc3; }
  
 .breadcrumb::after {
 content: "css template by katie (#106445) & jester (#187561)";
-color: #HEX;
+color: #d3dbc3;
 position: absolute;
 right: 13%;
 z-index: 100; }
