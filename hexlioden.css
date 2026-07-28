@@ -155,12 +155,21 @@ border-top: none !important;
 /* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
 
 .breadcrumb {
-background: rgba(20, 50, 57, 0.75) !important;
+background: !HEX !important;
 color: #d3dbc3 !important;
 border: none !important;
 border-radius: 0px !important;} 
 .breadcrumb .active {
 color: #d3dbc3; }
+
+/* CREDIT - no touchy this part, the code will work just fine */
+ 
+.breadcrumb::after {
+content: "css template by katie (#106445) & jester (#187561)";
+color: #HEX;
+position: absolute;
+right: 13%;
+z-index: 100; }
  
 /* ALERTS 
 .alert is all alerts, only set this one if you want all alerts to be the same color
