@@ -155,7 +155,7 @@ border-top: none !important;
 /* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
 
 .breadcrumb {
-background: !HEX !important;
+background: rgba(20, 50, 57, 0.75) !important;
 color: #d3dbc3 !important;
 border: none !important;
 border-radius: 0px !important;} 
