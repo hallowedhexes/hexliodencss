@@ -165,7 +165,7 @@ color: #d3dbc3; }
 /* CREDIT - no touchy this part, the code will work just fine */
  
 .breadcrumb::after {
-content: "css template by katie (#106445) & jester (#187561)";
+content: "css template by katie (#106445) & jester (#187561) | edits by hart (#429146)";
 color: #d3dbc3;
 position: absolute;
 right: 13%;
