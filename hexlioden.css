@@ -637,13 +637,10 @@ box html should look like this
 <div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div> */
 
 .boxcontainer {
-height: 75px;
 display: block;
 justify-content: center;
 transition: 1s;
 background: transparent;}
-.boxcontainer:hover {
-height: 250px; }
    
 .Box1 {
 background: rgba(20, 50, 57, 0.75) !important;
@@ -652,20 +649,14 @@ border: none !important;
 padding: 1.5rem 2rem;
 margin-bottom: 2rem;
 border-radius: 1.5rem;
-height: 75px;
 width: 100%;
-overflow: hidden;
-transition: 1s }   
-.Box1:hover {
-overflow-y: auto;
-height: 250px; }
+transition: 1s }
    
 .Box2 {
 background: rgba(20, 50, 57, 0.75) !important;
 color: #eef2ed !important;
 border: none !important;
 float: right;
-overflow: hidden;
 margin-bottom: 10px;
 transition: 1s;
 width: 25%;
@@ -674,10 +665,7 @@ margin-bottom: 2rem;
 border-radius: 1.5rem;
 float: left;
 margin-left: 24%;
-height: 200px;}   
-.Box2:hover {
-overflow-y: auto;
-height: 250px; }
+height: 200px;}
 	
 .Box3 {
 background: rgba(20, 50, 57, 0.75) !important;
@@ -685,7 +673,6 @@ color: #eef2ed !important;
 border: none !important;
 border-radius: 0px !important;
 padding: 5px;
-overflow: hidden;
 margin-bottom: 10px;
 transition: 1s;
     width: 25%;
@@ -694,10 +681,7 @@ transition: 1s;
     border-radius: 1.5rem;
     float: right;
     margin-right: 24%;
-    height: 200px;}   
-.Box3:hover {
-overflow-y: auto;
-height: 250px; }
+    height: 200px;}
 
 /* These are nice little QOL codes, credit to their creators!
 
