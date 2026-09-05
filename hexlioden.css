@@ -640,7 +640,7 @@ box html should look like this
 height: 75px;
 display: block;
 justify-content: center;
-transition: 1s 
+transition: 1s;
 width: 50%;
 padding: 1.5rem 2rem;
 background: rgba(20, 50, 57, 0.75);
