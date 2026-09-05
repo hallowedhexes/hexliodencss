@@ -838,14 +838,6 @@ or fill out both i can't stop you but it'll be a clusterfuck */
 
 /* CREDIT - no touchy this part, the code will work just fine */
 
-.breadcrumb::after {
-    content: "css template by katie (#106445) & jester (#187561)";
-    color: inherit;
-    position: absolute;
-    right: 13%;
-    z-index: 100;
-}
-
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .breadcrumb::after {
         right: 20%;
