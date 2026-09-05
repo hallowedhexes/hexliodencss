@@ -796,7 +796,7 @@ box html should look like this
     border: none !important;
     width: 25%;
     padding: 1.5rem 2rem;
-    margin: 1rem 2rem;
+    margin: 1rem;
     border-radius: 1.5rem;
     min-height: 100%;
 }
@@ -807,7 +807,7 @@ box html should look like this
     border: none !important;
     width: 25%;
     padding: 1.5rem 2rem;
-    margin: 1rem 2rem;
+    margin: 1rem;
     border-radius: 1.5rem;
     min-height: 100%;
 }
