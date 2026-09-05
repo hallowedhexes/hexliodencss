@@ -143,7 +143,7 @@ navbar-collapse is just there to hide the white line
 
 .navbar-toggle {
 border: none !important;
-background: #HEX !important;
+background: inherit !important;
 }
 
 .navbar-collapse {
@@ -215,20 +215,20 @@ border-radius: 0px !important;
 color: #eef2ed !important;}
 	
 .comment {     
-background: #HEX !important;
+background: inherit !important;
 border: none !important;
 border-bottom: none !important;
 border-radius: 0px !important;
-color: #HEX !important;
+color: inherit !important;
 text-align: center !important;}
 .text-muted { 
-color: #HEX !important; }
+color: inherit !important; }
 
 input.bad {
-background: #HEX !important;
+background: inherit !important;
 color: #eef2ed !important;}
 input.bad a {
-color: #HEX !important; }
+color: inherit !important; }
 
 table#player.table hr {
 display: none !important; }
@@ -268,13 +268,13 @@ border-radius: 50px !important; }
 
 /* ENERGY */ .progress-bar-warning { 
 background: #62807a !important;
-color: #HEX !important;}
+color: inherit !important;}
 /* HUNGER */ .progress-bar-danger { 
 background: #62807a !important;
-color: #HEX !important;}
+color: inherit !important;}
 /* EXP + ACHIEVEMENTS */ .progress-bar-success { 
 background: #62807a !important;
-color: #HEX !important;}
+color: inherit !important;}
 
 /* This is the text that reads Energy: X% */
 .progress div {
@@ -283,7 +283,7 @@ color: #eef2ed !important; }
 /* This is the background of the progress bars. */
 .progress {
 background:  #273331;
-color: #HEX !important;
+color: inherit !important;
 border-radius: 0px !important;  }
 
 /* Icon Replacement - Warning
@@ -336,7 +336,7 @@ not touch the even/odd specifications */
 .s-chat-message {
 background: rgba(20, 50, 57, 0.55) !important;
 color: #eef2ed  !important;
-border-bottom: #HEX !important; }
+border-bottom: inherit !important; }
 
 .s-chat-message:nth-child(even) {
 background: rgba(20, 50, 57, 0.55) !important;
@@ -350,9 +350,9 @@ no it doesn't work if you just do background.
 may 8th: stop touchy */
 	
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
-background-color: #HEX !important;
-border-left: 6px solid #HEX !important;
-color: #HEX !important; }
+background-color: inherit !important;
+border-left: 6px solid inherit !important;
+color: inherit !important; }
 
 /* This is the character counter, that displays X/150 */
 
@@ -552,8 +552,8 @@ table#pride.table .xsmall just puts the lion subtext back to its regular size, s
 .xsmalls earlier when fixing FAPA. you can remove this if you want the bigger text. */
 
 .featured-lion {
-background: #HEX !important;
-color: #HEX !important;
+background: inherit !important;
+color: inherit !important;
 border: none !important;
 border-radius: 0px !important;
 padding: 0;
@@ -566,7 +566,7 @@ img[src*="cave/default"] {
 content: url('IMG LINK') !important;}
 
 table#pride.table, table#pride.table a, table#pride.table a:visited {
-color: #HEX !important; }
+color: inherit !important; }
 
 table#pride.table .xsmall
 {font-size: 12px !important;}
@@ -730,7 +730,7 @@ or fill out both i can't stop you but it'll be a clusterfuck */
  
 .breadcrumb::after {
 content: "css template by katie (#106445) & jester (#187561)";
-color: #HEX;
+color: inherit;
 position: absolute;
 right: 13%;
 z-index: 100; }
