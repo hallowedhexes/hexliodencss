@@ -632,7 +632,15 @@ a[href$="unsorted.php?id=429146"]>div.cave-grid>img {
     content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
 }
 
+a[href$="unsorted.php?id=435782"]>div.cave-grid>img {
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+}
+
 a[href*="lionoverview.php?id=429146"]>div.cave-grid>img {
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+}
+
+a[href*="lionoverview.php?id=435782"]>div.cave-grid>img {
     content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
 }
 
