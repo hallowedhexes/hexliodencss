@@ -794,7 +794,7 @@ box html should look like this
     background: rgba(20, 50, 57, 0.75) !important;
     color: #eef2ed !important;
     border: none !important;
-    width: 25%;
+    width: calc(25% - 1rem);
     padding: 1.5rem 2rem;
     margin: 1rem;
     border-radius: 1.5rem;
@@ -805,7 +805,7 @@ box html should look like this
     background: rgba(20, 50, 57, 0.75) !important;
     color: #eef2ed !important;
     border: none !important;
-    width: 25%;
+    width: calc(25% - 1rem);
     padding: 1.5rem 2rem;
     margin: 1rem;
     border-radius: 1.5rem;
