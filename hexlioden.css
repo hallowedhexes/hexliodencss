@@ -643,6 +643,14 @@ a[href$="unsorted-beetles.php?id=429146"] img {
     height: auto;
 }
 
+a[href$="mound.php?id=186822"] {
+    display: none;
+}
+
+a[href$="create-mound.php"] {
+    display: none;
+}
+
 a[href$="mound.php?id=186822"] img {
     content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
     background-size: cover;
