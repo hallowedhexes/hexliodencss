@@ -788,16 +788,13 @@ box html should look like this
     margin-bottom: 2rem;
     border-radius: 1.5rem;
     width: 100%;
-    transition: 1s
 }
 
 .Box2 {
     background: rgba(20, 50, 57, 0.75) !important;
     color: #eef2ed !important;
     border: none !important;
-    float: right;
     margin-bottom: 10px;
-    transition: 1s;
     width: 25%;
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
@@ -812,7 +809,6 @@ box html should look like this
     border-radius: 0px !important;
     padding: 5px;
     margin-bottom: 10px;
-    transition: 1s;
     width: 25%;
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
