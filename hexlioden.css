@@ -641,11 +641,7 @@ height: 75px;
 display: block;
 justify-content: center;
 transition: 1s;
-width: 50%;
-padding: 1.5rem 2rem;
-background: rgba(20, 50, 57, 0.75);
-margin-bottom: 2rem;
-border-radius: 1.5rem;}
+background: transparent;}
 .boxcontainer:hover {
 height: 250px; }
    
