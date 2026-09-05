@@ -637,12 +637,15 @@ box html should look like this
 <div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div> */
 
 .boxcontainer {
-background: none;
 height: 75px;
-padding: 0px;
 display: block;
 justify-content: center;
-transition: 1s }
+transition: 1s 
+width: 50%;
+padding: 1.5rem 2rem;
+background: rgba(20, 50, 57, 0.75);
+margin-bottom: 2rem;
+border-radius: 1.5rem;}
 .boxcontainer:hover {
 height: 250px; }
    
