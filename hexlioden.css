@@ -35,105 +35,131 @@ color - the TEXT color of the element
 border-radius - the roundness of the borders, for circular elements, set to 50% 
 box-shadow - a shadow behind the element itself. you usually want this set to none. 
 */
- 
+
 /* FONTS - Import from Google Fonts */
- 
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700,800,900|Playfair+Display:800,900italic');
- 
-body {font-family: Raleway;}
- 
-.topbar {font-family: Playfair Display;}
- 
-.navbar {font-family: Playfair Display;}
+
+body {
+    font-family: Raleway;
+}
+
+.topbar {
+    font-family: Playfair Display;
+}
+
+.navbar {
+    font-family: Playfair Display;
+}
 
 /* BACKGROUNDS 
 The first one is for PC, the second is for mobile. You can also use an image in the second one
 via replacing #HEX with url('IMG LINK') center center fixed;
 BUT I recommend repeating patterns rather than full images. */
- 
-@media screen and (min-width: 601px) { 
-body {
-background: url('https://images.unsplash.com/photo-1534577403868-27b805ca4b9c?q=80&w=2132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center fixed;
-background-size: 100%;
-color: #eef2ed; } }
 
-@media screen and (max-width: 600px){
-body {
-background: #1d3239;
-background-size: cover;
-color: #eef2ed; } }
+@media screen and (min-width: 601px) {
+    body {
+        background: url('https://images.unsplash.com/photo-1534577403868-27b805ca4b9c?q=80&w=2132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center fixed;
+        background-size: 100%;
+        color: #eef2ed;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #1d3239;
+        background-size: cover;
+        color: #eef2ed;
+    }
+}
 
 /* SCROLL BOXES */
- 
+
 ::-webkit-scrollbar {
-width: 7px;
-height: 7px; }
+    width: 7px;
+    height: 7px;
+}
+
 ::-webkit-scrollbar-track {
-background: #1d3239;}
+    background: #1d3239;
+}
+
 ::-webkit-scrollbar-thumb {
-background: #265155; } 
- 
+    background: #265155;
+}
+
 /* HEADERS -
 H1 is the big header that says 'X's Den'
 H2 is not used anywhere in the default look unless you want to use it.
 H3 is used in the side bar (above the energy panel, achievement panel, etc. */
- 
+
 h1 {
-color: #d3dbc3 !important;
-font-size: 64px;
-text-align: center !important;
-font-family: 'Playfair Display', cursive;}
+    color: #d3dbc3 !important;
+    font-size: 64px;
+    text-align: center !important;
+    font-family: 'Playfair Display', cursive;
+}
 
 h2 {
-color: #d3dbc3 !important;
-font-size: 24px;}
+    color: #d3dbc3 !important;
+    font-size: 24px;
+}
 
 h3 {
-color: #d3dbc3 !important;
-font-size: 18px;}
- 
+    color: #d3dbc3 !important;
+    font-size: 18px;
+}
+
 /* LINKS
 Color of links. This will affect all links on your page.
 Plan accordingly. */
- 
+
 a:link,
 a:visited {
-color: #eef2ed!important;
-background: none !important; }
-   
+    color: #eef2ed !important;
+    background: none !important;
+}
+
 a:hover {
-color: #a6bdba !important; }
- 
+    color: #a6bdba !important;
+}
+
 /* MAIN PANEL - The panel in front of your background image. Usually a solid color on Lioden.
 You can make it a solid color by either using a HEX code, or by setting the final number in RGBA to 1.0 */
-   
+
 .container.main {
-background: rgba(20, 50, 57, 0.75);
-border: none;
-box-shadow: none;
-border-radius: 5px; }
+    background: rgba(20, 50, 57, 0.75);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
 .col-md-9 {
-background: none; } 
- 
+    background: none;
+}
+
 /* TOPBAR, NAVBAR, & BREADCRUMB */
- 
+
 .topbar {
-background: #1d3239 !important;
-color: #d3dbc3 !important;
-border: none !important;
-border-radius: 0px !important;  }
- 
+    background: #1d3239 !important;
+    color: #d3dbc3 !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
 .navbar {
-background: #1d3239 !important;
-color: #d3dbc3 !important;
-border: none !important;
-border-radius: 0px !important; }
+    background: #1d3239 !important;
+    color: #d3dbc3 !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
 
 .navbar li a:hover {
-background: #315860 !important;
-color: #a6bdba !important; }
+    background: #315860 !important;
+    color: #a6bdba !important;
+}
 
 /* This is mobile collapable navbar color changes.
 toggle is the button that opens the navbar
@@ -142,35 +168,39 @@ navbar-collapse is just there to hide the white line
 */
 
 .navbar-toggle {
-border: none !important;
-background: inherit !important;
+    border: none !important;
+    background: inherit !important;
 }
 
 .navbar-collapse {
-box-shadow: none !important;
-border-top: none !important;
+    box-shadow: none !important;
+    border-top: none !important;
 }
 
- 
+
 /* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
 
 .breadcrumb {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #d3dbc3 !important;
-border: none !important;
-border-radius: 0px !important;} 
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #d3dbc3 !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
 .breadcrumb .active {
-color: #d3dbc3; }
+    color: #d3dbc3;
+}
 
 /* CREDIT - no touchy this part, the code will work just fine */
- 
+
 .breadcrumb::after {
-content: "css template by katie (#106445) & jester (#187561) | edits by hart (#429146)";
-color: #d3dbc3;
-position: absolute;
-right: 13%;
-z-index: 100; }
- 
+    content: "css template by katie (#106445) & jester (#187561) | edits by hart (#429146)";
+    color: #d3dbc3;
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+
 /* ALERTS 
 .alert is all alerts, only set this one if you want all alerts to be the same color
 .alert-success is the green one you see for hunting, patrolling, etc.
@@ -178,24 +208,31 @@ z-index: 100; }
 .alert-warning is also some other red alerts, but I can't remember which ones. keep this
 and danger the same color for best results
 (quick notice maybe? more research)*/
- 
+
 .alert {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;
-border: none !important;
-border-radius: 0px !important;
-text-align: center !important;  }
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    border-radius: 0px !important;
+    text-align: center !important;
+}
+
 .alert-warning {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;}
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+}
+
 .alert-danger {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;}
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+}
+
 .alert-success {
-background: 
-rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;}
- 
+    background:
+        rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+}
+
 
 /*COMMENT BOX 
 This is a complicated one. please read carefully
@@ -209,33 +246,43 @@ If you want the flippy floppy colors, where one is a little darker than the othe
 */
 
 div#commentBox {
-background: rgba(20, 50, 57, 0.75) !important;
-border: none !important;
-border-radius: 0px !important;
-color: #eef2ed !important;}
-	
-.comment {     
-background: inherit !important;
-border: none !important;
-border-bottom: none !important;
-border-radius: 0px !important;
-color: inherit !important;
-text-align: center !important;}
-.text-muted { 
-color: inherit !important; }
+    background: rgba(20, 50, 57, 0.75) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #eef2ed !important;
+}
+
+.comment {
+    background: inherit !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-radius: 0px !important;
+    color: inherit !important;
+    text-align: center !important;
+}
+
+.text-muted {
+    color: inherit !important;
+}
 
 input.bad {
-background: inherit !important;
-color: #eef2ed !important;}
+    background: inherit !important;
+    color: #eef2ed !important;
+}
+
 input.bad a {
-color: inherit !important; }
+    color: inherit !important;
+}
 
 table#player.table hr {
-display: none !important; }
-table#player.table div.xlarge { 
-margin-top: 10px !important; }
+    display: none !important;
+}
 
- 
+table#player.table div.xlarge {
+    margin-top: 10px !important;
+}
+
+
 /* SIDE PANELS 
 
 you can use https://www.transparenttextures.com/ to have your panel bgs, your progress bars, almost any element in your css have a texture!
@@ -249,233 +296,285 @@ color: #HEX !important;
 border: none !important;
 border-radius: 0px !important;
 box-shadow: none !important;  } */
- 
+
 .panel {
-background: rgba(20, 50, 57, 0.55) !important;
-color: #d3dbc3 !important;
-border: none !important;
-border-radius: 0px !important;
-box-shadow: none !important;  }
-   
+    background: rgba(20, 50, 57, 0.55) !important;
+    color: #d3dbc3 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
 /*IMPRESSION / ALL PROGRESS Bars
 Unless you color the progress bars below, all progress bars will default
 to the colors you put here.
 Bars will also inherit the border-radius value from this one, so it's
 not needed to specify border-radius for all bars. */
 .progress-bar {
-background: #62807a !important; 
-border-radius: 50px !important; }
+    background: #62807a !important;
+    border-radius: 50px !important;
+}
 
-/* ENERGY */ .progress-bar-warning { 
-background: #62807a !important;
-color: inherit !important;}
-/* HUNGER */ .progress-bar-danger { 
-background: #62807a !important;
-color: inherit !important;}
-/* EXP + ACHIEVEMENTS */ .progress-bar-success { 
-background: #62807a !important;
-color: inherit !important;}
+/* ENERGY */
+.progress-bar-warning {
+    background: #62807a !important;
+    color: inherit !important;
+}
+
+/* HUNGER */
+.progress-bar-danger {
+    background: #62807a !important;
+    color: inherit !important;
+}
+
+/* EXP + ACHIEVEMENTS */
+.progress-bar-success {
+    background: #62807a !important;
+    color: inherit !important;
+}
 
 /* This is the text that reads Energy: X% */
 .progress div {
-color: #eef2ed !important; }
+    color: #eef2ed !important;
+}
 
 /* This is the background of the progress bars. */
 .progress {
-background:  #273331;
-color: inherit !important;
-border-radius: 0px !important;  }
+    background: #273331;
+    color: inherit !important;
+    border-radius: 0px !important;
+}
 
 /* Icon Replacement - Warning
 used only for starving kings and last day of events */
 
 img[src$="icon_warning.png"] {
-content: url('imagelink') !important;
-width: 24px !important; }
- 
+    content: url('imagelink') !important;
+    width: 24px !important;
+}
+
 /* CHAT */
 
 button#label_currentChannel {
-border: none !important;
-background: #d3dbc3 !important; }
+    border: none !important;
+    background: #d3dbc3 !important;
+}
 
 div#chatMessageContainer {
-border: none !important; }
+    border: none !important;
+}
 
 .s-chat-message_timestamp {
-color: #d3dbc3 !important; }
+    color: #d3dbc3 !important;
+}
 
 .s-chat-sidebar #fraChatChannelMenu,
-button.channelSwitcher, button.channelSwitcher.active {
+button.channelSwitcher,
+button.channelSwitcher.active {
     background: rgba(20, 50, 57, 0.55) !important;
-color: #d3dbc3 !important;	
-border: none !important;
-border-radius: 0px !important;
-box-shadow: none !important; }
+    color: #d3dbc3 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
 
 div.emoteList.active {
-  background: rgba(20, 50, 57, 0.55) !important;
-  border: 1px solid rgba(20, 50, 57, 0.55) !important;
-  box-shadow: none !important;
+    background: rgba(20, 50, 57, 0.55) !important;
+    border: 1px solid rgba(20, 50, 57, 0.55) !important;
+    box-shadow: none !important;
 }
+
 div.emoteList.active::before {
-background: rgba(20, 50, 57, 0.55);
-border-top: none !important;
-border: 1px solid rgba(20, 50, 57, 0.55) !important; }
+    background: rgba(20, 50, 57, 0.55);
+    border-top: none !important;
+    border: 1px solid rgba(20, 50, 57, 0.55) !important;
+}
 
 /* PINNED MESSAGES - This will change the background color of where staff pin news */
 
 .s-chat-message__pinned {
-background-color: rgba(20, 50, 57, 0.55) !important;
-color: #d3dbc3 !important;
-border: none !important; }
+    background-color: rgba(20, 50, 57, 0.55) !important;
+    color: #d3dbc3 !important;
+    border: none !important;
+}
 
 /* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, do
-not touch the even/odd specifications */ 
+not touch the even/odd specifications */
 
 .s-chat-message {
-background: rgba(20, 50, 57, 0.55) !important;
-color: #eef2ed  !important;
-border-bottom: inherit !important; }
+    background: rgba(20, 50, 57, 0.55) !important;
+    color: #eef2ed !important;
+    border-bottom: inherit !important;
+}
 
 .s-chat-message:nth-child(even) {
-background: rgba(20, 50, 57, 0.55) !important;
-border: none !important; }
+    background: rgba(20, 50, 57, 0.55) !important;
+    border: none !important;
+}
+
 .s-chat-message:nth-child(odd) {
-background: rgba(20, 50, 57, 0.55) !important;
-border: none !important; }
+    background: rgba(20, 50, 57, 0.55) !important;
+    border: none !important;
+}
 
 /* This changes the color of pinged messages. Yes, it has to say background-color
 no it doesn't work if you just do background.
 may 8th: stop touchy */
-	
+
 #chatMessageList[data-pings="enabled"] .s-chat-message_mention {
-background-color: inherit !important;
-border-left: 6px solid inherit !important;
-color: inherit !important; }
+    background-color: inherit !important;
+    border-left: 6px solid inherit !important;
+    color: inherit !important;
+}
 
 /* This is the character counter, that displays X/150 */
 
 div#lblCharacterCounter {
-color: #eef2ed !important; }
+    color: #eef2ed !important;
+}
 
 /* I can't remember what this does but I know things get weird if you touch it
 that means do NOT touch it.
 i'm being so fr stop touching this */
 html.nolayout {
-background: none !important; }
+    background: none !important;
+}
 
 /* FAPA, KING DYNASTY, ETC.
 The .xsmall makes it where FAPA boxes are the same length.
 div.left controls BOTH the dynasty, achievements, showcase, beetle book AND
 view breeding requests, view user log, and view attack history buttons */
- 
+
 .feature {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;
-border: 3px double rgba(20, 50, 57, 0.75) !important;
-border-radius: 0px !important;  }
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: 3px double rgba(20, 50, 57, 0.75) !important;
+    border-radius: 0px !important;
+}
 
 div.left {
-background: rgba(20, 50, 57, 0.75) !important;
-color:#eef2ed !important;
-border: none !important;
-border-radius: 0px !important; }
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
 
 .xsmall {
-font-size: 14px !important; }
- 
+    font-size: 14px !important;
+}
+
 /* LION INFO 
 Table - the background behind your table. You can make this a solid color by replacing
 rgba(0, 0, 0, 0.0) with a HEX code, or by replacing the 0.0 with a 1.0 */
- 
+
 .table {
-background: rgba(0, 0, 0, 0.0);
-border: none !important;
-border-collapse: separate;
-border-radius: 0px; }
+    background: rgba(0, 0, 0, 0.0);
+    border: none !important;
+    border-collapse: separate;
+    border-radius: 0px;
+}
 
 /* .top is where your king's name is displayed
 .bottom is where your number of mutations within your pride is displayed
 th is every other header on your den, like sparring table, reclaim left lions,
 edit details, etc. */
 
-.top, .bottom, th {
-background: rgba(20, 50, 57, 0.75)  !important;
-color: #eef2ed !important;
-border: none !important;
-border-radius: 0px !important; }
+.top,
+.bottom,
+th {
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
 
 /* This removes the underline under the 'X mutations in your pride' link
 if you like it, you can just delete the code under this */
 
-.bottom a:visited, .bottom a {
-text-decoration: none !important;}
+.bottom a:visited,
+.bottom a {
+    text-decoration: none !important;
+}
 
 /* table.left will be used by the sections on the left of the edit your details panel once open
 .inner-table .left is used by the table that displays the names of the sections of
 info about your den, like your territory, your king's stats, etc. 
 .inner-table .right is used by the boxes next to the king's info, that displays the actual info. */
- 
+
 .table .left {
-background: #1d3239;
-border-radius: 0px !important; }
+    background: #1d3239;
+    border-radius: 0px !important;
+}
 
 .inner-table .left {
-background: rgba(20, 50, 57, 0.75) !important;
-border-radius: 0px !important;
-color: #d3dbc3 !important; }
+    background: rgba(20, 50, 57, 0.75) !important;
+    border-radius: 0px !important;
+    color: #d3dbc3 !important;
+}
 
 .inner-table .right {
-background: rgba(20, 50, 57, 0.75) !important;
-border-radius: 0px !important; 
-color: #d3dbc3 !important; } 
+    background: rgba(20, 50, 57, 0.75) !important;
+    border-radius: 0px !important;
+    color: #d3dbc3 !important;
+}
 
 .right_odd {
-background: none !important; }
+    background: none !important;
+}
 
 /* LION AND USER AVATAR OPACITY */
-   
+
 div#lion_image {
-opacity: 1.0;
-border-radius: 50%;
-overflow: hidden; }   
+    opacity: 1.0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 table#player img {
-opacity: 1.0;
-border-radius: 50%; }
+    opacity: 1.0;
+    border-radius: 50%;
+}
 
 /* LIODEN LOGO REPLACER - You can use any image, but the 192x120 size works best.
 otherwise it can make your navbar look weird.
 192x120 */
-   
+
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-display: none;}
+    display: none;
+}
+
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
-content: url('IMG LINK'); }
- 
+    content: url('IMG LINK');
+}
+
 /* TEXT BOXES & BUTTONS -
 all text boxes and buttons will be whatever color you put in here
 you can separate them, just by copy and pasting names and the css code behind it
 for example, for input to be red while everything else is white, it would look like this
 input {background: red !important;}
 textarea, select, button.button, a.btn.btn-default.button {background: white !important;} */
- 
-input, textarea, select, button.button,
+
+input,
+textarea,
+select,
+button.button,
 a.btn.btn-default.button {
-background: rgba(20, 50, 57, 0.75) !important;
-border: none !important;
-border-radius: 0px !important;
-color: #eef2ed !important;
-text-shadow: none !important; }
- 
+    background: rgba(20, 50, 57, 0.75) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #eef2ed !important;
+    text-shadow: none !important;
+}
+
 /* CAVE NAMES - changes the color of of where cave names are displayed */
- 
+
 .cave-grid,
 .mound-grid {
-background: rgba(20, 50, 57, 0.75)  !important;
-color: #eef2ed !important;
-border: none !important;
-border-radius: 0px !important; }
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
 
 /* CAVE & MOUND COVERS
 width: 240
@@ -489,54 +588,71 @@ you can copy and paste for more caves or mounds than what's provided
 */
 
 div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important;
-width: 240px;
-height: 120px; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 240px;
+    height: 120px;
+}
 
 a[href$="370506"]>div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important;
-width: 258px !important;
-height: 120px !important; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 258px !important;
+    height: 120px !important;
+}
+
 a[href$="547757"]>div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important; 
-width: 258px !important;
-height: 120px !important; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 258px !important;
+    height: 120px !important;
+}
+
 a[href$="369603"]>div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important;
-width: 258px !important;
-height: 120px !important; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 258px !important;
+    height: 120px !important;
+}
+
 a[href$="396795"]>div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important;
-width: 258px !important;
-height: 120px !important; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 258px !important;
+    height: 120px !important;
+}
+
 a[href$="361136"]>div.cave-grid>img {
-content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')!important;
-width: 258px !important;
-height: 120px !important; }
+    content: url('https://images.unsplash.com/photo-1639003309972-4e5492d6beff?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    width: 258px !important;
+    height: 120px !important;
+}
 
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-	content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png')!important; }
-a[href$="unsorted.php?id=429146"]>div.cave-grid>img{
-content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png')!important;
-width: 75px;
-height: 75px;}
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+}
+
+a[href$="unsorted.php?id=429146"]>div.cave-grid>img {
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+    width: 75px;
+    height: 75px;
+}
+
 a[href*="lionoverview.php?id=429146"]>div.cave-grid>img {
-content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png')!important;
-width: 75px;
-height: 75px; }
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+    width: 75px;
+    height: 75px;
+}
 
 a[href$="unsorted-beetles.php?id=429146"] img {
-content:url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
-background-size: cover;
-width: 100%;
-height: auto; } 
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
 
 a[href$="mound.php?id=186822"] img {
-content:url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
-background-size: cover;
-width: 100%;
-height: auto; } 
+    content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
 
 
 /* CAVE COMPATIBILITY
@@ -552,24 +668,30 @@ table#pride.table .xsmall just puts the lion subtext back to its regular size, s
 .xsmalls earlier when fixing FAPA. you can remove this if you want the bigger text. */
 
 .featured-lion {
-background: inherit !important;
-color: inherit !important;
-border: none !important;
-border-radius: 0px !important;
-padding: 0;
-margin: 0 auto;
-max-width: 640px;
-font-weight: bold;
-font-size: 14px; }
+    background: inherit !important;
+    color: inherit !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 640px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 img[src*="cave/default"] {
-content: url('IMG LINK') !important;}
+    content: url('IMG LINK') !important;
+}
 
-table#pride.table, table#pride.table a, table#pride.table a:visited {
-color: inherit !important; }
+table#pride.table,
+table#pride.table a,
+table#pride.table a:visited {
+    color: inherit !important;
+}
 
-table#pride.table .xsmall
-{font-size: 12px !important;}
+table#pride.table .xsmall {
+    font-size: 12px !important;
+}
 
 
 /* CUSTOM FOOTNOTE ICONS - MADE BY PANDORA
@@ -580,54 +702,67 @@ Please do not remove credit
 
 /* FOOTNOTE - MUT */
 img[src$="footmut.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - HUNT */
 img[src$="foothunt.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - HEIR */
 img[src$="footheir.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - BREED/HEART */
 img[src$="footbreed.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - CROSS/X */
 img[src$="footx.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - BIO/BOOK */
 img[src$="footbio.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* FOOTNOTE - INFERTILE/BROKEN HEART*/
 img[src$="footinfertile.png"] {
-    content:url('LINK')!important;
-    width:20px!important; }
+    content: url('LINK') !important;
+    width: 20px !important;
+}
 
 /* This changes the color of the 'badge', aka what displays inbox notifications &
 days till heat for lionesses */
 
 .badge {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed  !important; }
-	
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+}
+
 /* NO LINK UNDERLINE - This removes Link underlines at the links at the bottom of the page,
 and removes link underlines from edit your details */
-		
-.footer a:link, .footer a:visited, .footer a:active {
-border-bottom: none !important; }
 
-td.bottom a, th a {
-border-bottom: none !important; }
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    border-bottom: none !important;
+}
+
+td.bottom a,
+th a {
+    border-bottom: none !important;
+}
 
 /* BOXES
 do not give the box container a background.
@@ -637,51 +772,56 @@ box html should look like this
 <div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div> */
 
 .boxcontainer {
-display: block;
-justify-content: center;
-transition: 1s;
-background: transparent;}
-   
+    display: block;
+    justify-content: center;
+    transition: 1s;
+    background: transparent;
+    display: flex;
+}
+
 .Box1 {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;
-border: none !important;
-padding: 1.5rem 2rem;
-margin-bottom: 2rem;
-border-radius: 1.5rem;
-width: 100%;
-transition: 1s }
-   
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    transition: 1s
+}
+
 .Box2 {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;
-border: none !important;
-float: right;
-margin-bottom: 10px;
-transition: 1s;
-width: 25%;
-padding: 1.5rem 2rem;
-margin-bottom: 2rem;
-border-radius: 1.5rem;
-float: left;
-margin-left: 24%;
-height: 200px;}
-	
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    float: right;
+    margin-bottom: 10px;
+    transition: 1s;
+    width: 25%;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    float: left;
+    margin-left: 24%;
+    height: 200px;
+}
+
 .Box3 {
-background: rgba(20, 50, 57, 0.75) !important;
-color: #eef2ed !important;
-border: none !important;
-border-radius: 0px !important;
-padding: 5px;
-margin-bottom: 10px;
-transition: 1s;
+    background: rgba(20, 50, 57, 0.75) !important;
+    color: #eef2ed !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition: 1s;
     width: 25%;
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
     border-radius: 1.5rem;
     float: right;
     margin-right: 24%;
-    height: 200px;}
+    height: 200px;
+}
 
 /* These are nice little QOL codes, credit to their creators!
 
@@ -698,37 +838,39 @@ or fill out both i can't stop you but it'll be a clusterfuck */
 /* MEMBER ONLINE */
 .member-online {
     background: #62807a;
-    content:url('none')!important;
-	border-radius: 100px;
-    width:15px!important;
-    height:15px;
-	margin:0px;
-	margin-left:10px; }
-	
-	
+    content: url('none') !important;
+    border-radius: 100px;
+    width: 15px !important;
+    height: 15px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+
 /* CREDIT - no touchy this part, the code will work just fine */
- 
+
 .breadcrumb::after {
-content: "css template by katie (#106445) & jester (#187561)";
-color: inherit;
-position: absolute;
-right: 13%;
-z-index: 100; }
-		
-@media only screen and (max-width: 1199px) and (min-width: 992px)  {
-        .breadcrumb::after {
-            right: 20%;
-        }
-    }
+    content: "css template by katie (#106445) & jester (#187561)";
+    color: inherit;
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
 
-    @media only screen and (max-width: 991px) and (min-width: 768px)  {
-        .breadcrumb::after {
-            right: 20%;
-        }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .breadcrumb::after {
+        right: 20%;
     }
+}
 
-    @media only screen and (max-width: 767px) {
-        .breadcrumb::after {
-            right: 22%;
-        }
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .breadcrumb::after {
+        right: 20%;
     }
+}
+
+@media only screen and (max-width: 767px) {
+    .breadcrumb::after {
+        right: 22%;
+    }
+}
