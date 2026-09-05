@@ -630,14 +630,10 @@ div.cave-grid>img[src$="nestingbanner.png"] {
 
 a[href$="unsorted.php?id=429146"]>div.cave-grid>img {
     content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
-    width: 75px;
-    height: 75px;
 }
 
 a[href*="lionoverview.php?id=429146"]>div.cave-grid>img {
     content: url('https://i.ibb.co/TqMSKNkv/Illustration2.png') !important;
-    width: 75px;
-    height: 75px;
 }
 
 a[href$="unsorted-beetles.php?id=429146"] img {
