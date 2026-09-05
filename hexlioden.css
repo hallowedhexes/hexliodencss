@@ -794,24 +794,22 @@ box html should look like this
     background: rgba(20, 50, 57, 0.75) !important;
     color: #eef2ed !important;
     border: none !important;
-    margin-bottom: 10px;
     width: 25%;
     padding: 1.5rem 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 2rem;
     border-radius: 1.5rem;
-    height: 190px;
+    min-height: 100%;
 }
 
 .Box3 {
     background: rgba(20, 50, 57, 0.75) !important;
     color: #eef2ed !important;
     border: none !important;
-    margin-bottom: 10px;
     width: 25%;
     padding: 1.5rem 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem 2rem;
     border-radius: 1.5rem;
-    height: 190px;
+    min-height: 100%;
 }
 
 /* These are nice little QOL codes, credit to their creators!
