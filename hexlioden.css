@@ -647,6 +647,11 @@ a[href$="mound.php?id=186822"] {
     display: none;
 }
 
+a[href$="mound.php?id=204000"] {
+    display: none;
+}
+
+
 a[href$="create-mound.php"] {
     display: none;
 }
